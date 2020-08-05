@@ -30,7 +30,7 @@ __author__ = "Andrew Canter"
 def donuts(count):
     if count >= 10:
         return "Number of donuts: many"
-    else: 
+    else:
         return "Number of donuts: " + str(count)
 
 
@@ -44,7 +44,8 @@ def donuts(count):
 
 
 def both_ends(s):
-    if len(s) < 2: return ''
+    if len(s) < 2:
+        return ''
     return s[0:2] + s[-2:]
 
 
