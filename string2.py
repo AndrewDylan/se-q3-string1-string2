@@ -4,7 +4,7 @@ Kenzie assignment: String2
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "Andrew Canter"
+__author__ = "???"
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
@@ -20,19 +20,11 @@ __author__ = "Andrew Canter"
 # instead.
 # If the string length is less than 3, leave it unchanged.
 # Return the resulting string.
-import math
 
 
 def verbing(s):
-    if len(s) < 3:
-        return s
-    else:
-        if s.endswith("ing"):
-            s = s + "ly"
-            return s
-        else:
-            s = s + "ing"
-            return s
+    # your code here
+    return
 
 
 # E. not_bad
@@ -45,14 +37,8 @@ def verbing(s):
 
 
 def not_bad(s):
-    Not = s.find("not")
-    Bad = s.find("bad")
-
-    if Bad > Not:
-        s = s.replace(s[Not:Bad+3], "good")
-        return s
-    else:
-        return s
+    # your code here
+    return
 
 
 # F. front_back
@@ -66,13 +52,8 @@ def not_bad(s):
 
 
 def front_back(a, b):
-    lengthA = len(a)/2
-    lengthB = len(b)/2
-
-    frontHalf = a[0:math.ceil(lengthA)] + b[0:math.ceil(lengthB)]
-    backHalf = a[math.floor(lengthA+0.5):] + b[math.floor(lengthB+0.5):]
-
-    return frontHalf + backHalf
+    # your code here
+    return
 
 
 # Provided simple test() function used in main() to print
@@ -107,9 +88,7 @@ def main():
 
     print('\nfront_back')
     test(front_back('abcd', 'xy'), 'abxcdy')
-    test(front_back('abcde', 'yxz'), 'abcyxdez')  # Changed the test because
-    # there was an error the the expected solution was abcXYdez where the x
-    # and y were backwards
+    test(front_back('abcde', 'xyz'), 'abcxydez')
     test(front_back('Kitten', 'Donut'), 'KitDontenut')
 
 
